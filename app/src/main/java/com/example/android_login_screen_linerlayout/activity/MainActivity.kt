@@ -66,6 +66,24 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
+//
+//    private var loginTextWatcher = object : TextWatcher{
+//        override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+//
+//        }
+//
+//        override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+//            var userId = et_user_id!!.text.toString().trim()
+//            var userPassword = et_user_pw!!.text.toString().trim()
+//
+//            bn_login!!.isEnabled = userId.isNotEmpty() && userPassword.isNotEmpty()
+//        }
+//
+//        override fun afterTextChanged(p0: Editable?) {
+//
+//        }
+//
+//    }
 
 
 
