@@ -34,8 +34,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginLeft="15dp"
-
-                android:hint="ID" />
+                android:hint="ID"
+                android:imeOptions="actionNext"
+                android:inputType="text" />
 
         </LinearLayout>
 
@@ -54,12 +55,17 @@
                 android:text="User PW:"
                 android:textSize="20dp" />
 
+
             <EditText
                 android:id="@+id/et_user_pw"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:layout_marginLeft="15dp"
-                android:hint="PW" />
+                android:layout_marginStart="15dp"
+                android:hint="PW"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:nextFocusForward="@id/bn_login"/>
+
         </LinearLayout>
 
         <Button
@@ -69,6 +75,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="15dp"
             android:layout_marginRight="20dp"
+            android:enabled="false"
             android:text="Log In" />
 
     </LinearLayout>
